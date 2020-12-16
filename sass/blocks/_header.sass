@@ -1,0 +1,90 @@
+.header
+  height: 770px 
+  z-index: 1 
+  position: relative
+  &::before
+    content: ""
+    display: block
+    position: absolute
+    background-color: $bg-color
+    width: 720px
+    height: 100%
+    top: 0
+    z-index: -1
+  &::after
+    content: ""
+    display: block
+    position: absolute
+    right: 0
+    top: 0
+    z-index: -2
+    width: 720px
+    height: 100%
+    background: url(../img/bg.png)
+  &-inner
+    display: flex
+  &-text
+    margin-top: 261px
+    display: inline-block
+    max-width: 30rem
+    margin-right: 14rem
+    span
+      display: block
+      margin-bottom: 7px
+      text-transform: uppercase
+      letter-spacing: 1.08333px
+      color: #999999
+      font-size: 1.4rem
+      line-height: 2rem
+      font-weight: bold
+    h2
+      padding-bottom: 3rem
+      font-weight: bold
+      color: $title-color
+      font-size: 3rem
+      line-height: 3.8rem
+      letter-spacing: -1.27273px
+      text-transform: capitalize
+  &-form
+    margin-top: 153px
+    background-color: rgba(0,0,0,.8)
+    border-radius: 1rem  
+    padding: 7.8rem 0 7.1rem  
+    width: 411px
+    height: 465px
+    form
+      @include flex(center,center)
+      flex-direction: column
+      input, button, 
+        width: 30rem
+        border: none
+      input
+        padding: 1.2rem 0 1.2rem 3.3rem
+        border-radius: 6px
+        background-color: #fff
+        margin-bottom: 2rem
+        line-height: 2.4rem
+      button
+        margin-bottom: 1rem
+        background-color: $button-color
+        border-radius: 6px
+        text-align: center
+        padding: 1rem 0
+        line-height: 32px
+        font-weight: bold
+        transition: all .3s ease
+        &:hover
+          cursor: pointer
+          background-color: lighten($button-color, 15%)    
+    &-description
+      padding-left: 1.5rem
+      width: 30rem
+      font-size: 1.3rem
+      font-weight: 300
+      line-height: 2.7rem
+      position: relative
+      &::before
+        content: "*"
+        position: absolute
+        top: 0
+        left: 5px

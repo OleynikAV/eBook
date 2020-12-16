@@ -1,0 +1,44 @@
+
+@import '../css/normalize.css'
+@import 'variables'
+@import 'mixin'
+
+/* Basic Settings */
+
+  
+html
+  font-size: 10px
+
+body
+  font-size: 1.6rem
+  font-family: 'Open Sans', sans-serif  
+  line-height: 2.8rem
+  color: $main-text-color
+
+.container 
+  max-width: 1090px
+  width: 100%
+  padding-left: 15px
+  padding-right: 15px
+  margin-right: auto
+  margin-left: auto
+
+.container-fluid
+  max-width: 1200px
+  width: 100%
+  padding-left: 75px
+  padding-right: 75px
+
+
+.wrapper
+  min-width: 375px
+  max-width: 1440px
+  width: 100%
+  margin: 0 auto
+
+img
+  object-fit: cover
+
+@import 'blocks/header'
+@import 'blocks/main'
+@import 'media'
